@@ -1,10 +1,10 @@
 import './index.css';
-import { Calculate } from './components/Calculator';
+import { Calculates } from './components/Calculator';
 
 function App() {
   return (
 
-    <Calculate />
+    <Calculates />
 
   );
 }

@@ -1,81 +1,52 @@
-import React from 'react';
+export function Calculate() {
+  return (
+    <>
+      <ButtonGroup />
+    </>
 
-const makeCalculator = () => (
-  <div className="main_container">
-    <div className="count_display backgroundgrey div_height">
+  );
+}
 
-      <input name="myInput" className="count_display_filed  count_display" />
+function UserInput() {
+  return (
+    <div className="result">
+      0
+    </div>
+  );
+}
 
-    </div>
-    <div>
-      <button type="submit" className="submit-btn">
-        AC
-      </button>
-      <button type="submit" className="submit-btn">
-        +/-
-      </button>
-      <button type="submit" className="submit-btn">
-        %
-      </button>
-      <button type="submit" className="submit-btn orangebackground">
-        ÷
-      </button>
-    </div>
-    <div>
-      <button type="submit" className="submit-btn">
-        7
-      </button>
-      <button type="submit" className="submit-btn">
-        8
-      </button>
-      <button type="submit" className="submit-btn">
-        9
-      </button>
-      <button type="submit" className="submit-btn orangebackground">
-        x
-      </button>
-    </div>
-    <div>
-      <button type="submit" className="submit-btn">
-        4
-      </button>
-      <button type="submit" className="submit-btn">
-        5
-      </button>
-      <button type="submit" className="submit-btn">
-        6
-      </button>
-      <button type="submit" className="submit-btn orangebackground">
-        -
-      </button>
-    </div>
-    <div>
-      <button type="submit" className="submit-btn">
-        1
-      </button>
-      <button type="submit" className="submit-btn">
-        2
-      </button>
-      <button type="submit" className="submit-btn">
-        3
-      </button>
-      <button type="submit" className="submit-btn orangebackground">
-        +
-      </button>
-    </div>
-    <div>
-      <button type="submit" className="submit-zero">
-        0
-      </button>
-      <button type="submit" className="submit-btn">
-        .
-      </button>
-      <button type="submit" className="submit-btn orangebackground">
-        =
-      </button>
+export function ButtonGroup() {
+  return (
+    <>
+      <form>
+        <UserInput />
+        <div className="buttons">
+          <button type="button">Ac</button>
+          <button type="button">+/-</button>
+          <button type="button">%</button>
+          <button type="button" className="b-orange">&divide;</button>
 
-    </div>
+          <button type="button">7</button>
+          <button type="button">8</button>
+          <button type="button">9</button>
+          <button type="button" className="b-orange">&times;</button>
 
-  </div>
-);
-export default makeCalculator;
+          <button type="button">4</button>
+          <button type="button">5</button>
+          <button type="button">6</button>
+          <button type="button" className="b-orange">-</button>
+
+          <button type="button">1</button>
+          <button type="button">2</button>
+          <button type="button">3</button>
+          <button type="button" className="b-orange">+</button>
+        </div>
+        <div className="last">
+          <button type="button">0</button>
+          <button type="button">.</button>
+          <button type="button" className="b-orange">=</button>
+        </div>
+      </form>
+    </>
+  );
+}

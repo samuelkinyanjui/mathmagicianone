@@ -1,9 +1,11 @@
-import './App.css';
-import makeCalculator from './components/Calculator';
+import './index.css';
+import { Calculate } from './components/Calculator';
 
 function App() {
   return (
-    makeCalculator()
+
+    <Calculate />
+
   );
 }
 

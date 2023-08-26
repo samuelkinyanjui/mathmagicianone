@@ -32,6 +32,7 @@
 **Math magician** is developed in React, CSS, JavaScript, and Es 6 modules,webback
 
 ## 🛠 Built With <a name="built-with"></a>
+React and JSX
 
 ### Tech Stack <a name="tech-stack"></a>
 ##

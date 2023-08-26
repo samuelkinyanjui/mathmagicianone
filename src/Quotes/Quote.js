@@ -1,14 +1,14 @@
 import { useState, useEffect } from 'react';
 
-export function Quote() {
+function Quote() {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [hasError, setHasError] = useState(false);
-  const involve = {
-    headers: { 'X-Api-Key': '8aT24gv6TBZiwqX+BHiGug==VwbWI4RgUoRH1xu0' },
-  };
 
   useEffect(() => {
+    const involve = {
+      headers: { 'X-Api-Key': '8aT24gv6TBZiwqX+BHiGug==VwbWI4RgUoRH1xu0' },
+    };
     const fetchData = async () => {
       try {
         const res = await fetch('https://api.api-ninjas.com/v1/quotes?category=forgiveness', involve);
@@ -21,7 +21,7 @@ export function Quote() {
       setIsLoading(false);
     };
     fetchData();
-  }, [setData, setIsLoading]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [setData, setIsLoading]);
   if (hasError) return <div className="quotes">Something went wrong!</div>;
 
   if (isLoading) { return <div className="quotes">Loading...</div>; }
@@ -38,8 +38,4 @@ export function Quote() {
   );
 }
 
-export function Footer() {
-  return (
-    <></>
-  );
-}
+export default Quote;

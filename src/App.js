@@ -1,6 +1,6 @@
 import './index.css';
 import { Calculates } from './components/Calculator';
-import { Quote, Footer } from './Quotes/Quote';
+import Quote from './Quotes/Quote';
 
 function App() {
   return (
@@ -8,7 +8,6 @@ function App() {
       <div className="main">
         <Calculates />
         <Quote />
-        <Footer />
       </div>
     </>
 

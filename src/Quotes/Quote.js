@@ -1,14 +1,14 @@
 import { useState, useEffect } from 'react';
 
-function Quote() {
+export default function Quote() {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [hasError, setHasError] = useState(false);
+  const involve = {
+    headers: { 'X-Api-Key': '8aT24gv6TBZiwqX+BHiGug==VwbWI4RgUoRH1xu0' },
+  };
 
   useEffect(() => {
-    const involve = {
-      headers: { 'X-Api-Key': '8aT24gv6TBZiwqX+BHiGug==VwbWI4RgUoRH1xu0' },
-    };
     const fetchData = async () => {
       try {
         const res = await fetch('https://api.api-ninjas.com/v1/quotes?category=forgiveness', involve);
@@ -37,5 +37,3 @@ function Quote() {
     </div>
   );
 }
-
-export default Quote;

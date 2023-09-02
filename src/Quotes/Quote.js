@@ -24,7 +24,7 @@ function Quote() {
   }, [setData, setIsLoading]);
   if (hasError) return <div className="quotes">Something went wrong!</div>;
 
-  if (isLoading) { return <div className="quotes">Loading...</div>; }
+  if (isLoading) { return <div className="quotes">Loading.....</div>; }
   return (
     <div className="quotes">
       <article>

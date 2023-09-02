@@ -81,9 +81,11 @@ To run the project, execute the following command:
 ### Run tests
 
 > npx hint .
-
+##live in render
+https://math-man.onrender.com/
 
 ### Deployment
+
 
 Project can be deployed by using the windows ,linux servers.
 

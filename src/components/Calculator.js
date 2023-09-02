@@ -4,7 +4,10 @@ import calculate from '../logic/calculate';
 export function Calculates() {
   return (
     <>
-      <ButtonGroup />
+      <div className="calculator">
+        <h2>Let`s do some math!</h2>
+        <ButtonGroup className="group" />
+      </div>
     </>
 
   );
@@ -40,7 +43,7 @@ export function ButtonGroup() {
           <button type="button" value="AC" onClick={AddEvent}>AC</button>
           <button type="button" value="+/-" onClick={AddEvent}>+/-</button>
           <button type="button" value="%" onClick={AddEvent}>%</button>
-          <button type="button" className="b-orange" value="รท" onClick={AddEvent}>รท</button>
+          <button type="button" className="b-orange" value="÷" onClick={AddEvent}>÷</button>
 
           <button type="button" value="7" onClick={AddEvent}>7</button>
           <button type="button" value="8" onClick={AddEvent}>8</button>
